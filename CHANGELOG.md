@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# Navigate-to-declaration Changelog
+# Go To Declaration Changelog
 
 ## [Unreleased]
 ### Added

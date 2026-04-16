@@ -1,0 +1,4 @@
+<idea-plugin>
+    <!-- Extensions that only activate when the Handlebars plugin is present -->
+</idea-plugin>
+

@@ -1,15 +1,22 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.aqn3130.navigatetodeclaration</id>
-    <name>Navigate-to-declaration</name>
-    <vendor>aqn3130</vendor>
+    <name>Go To Declaration</name>
+    <vendor>Ahmad Qurbanzada</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends optional="true" config-file="withHandlebars.xml">com.dmarcotte.handlebars</depends>
+
+    <extensions defaultExtensionNs="org.jetbrains.kotlin">
+        <supportsKotlinPluginMode supportsK2="true" />
+    </extensions>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.aqn3130.navigatetodeclaration.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.aqn3130.navigatetodeclaration.startup.MyProjectActivity" />
+        <gotoDeclarationHandler implementation="com.github.aqn3130.navigatetodeclaration.ValKeywordGotoDeclarationHandler"/>
     </extensions>
 </idea-plugin>
