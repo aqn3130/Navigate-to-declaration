@@ -24,6 +24,7 @@ class GotoDeclarationHandlerTest : BasePlatformTestCase() {
     // ── tests ─────────────────────────────────────────────────────────────────
 
     fun `test returns null when sourceElement is null`() {
+        hbsLeaf("some content")
         val result = handler.getGotoDeclarationTargets(null, 0, myFixture.editor)
         assertNull(result)
     }

@@ -16,6 +16,5 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <gotoDeclarationHandler implementation="com.github.aqn3130.navigatetodeclaration.startup.GotoDeclarationHandler"/>
-        <testReturnsNullWhenNotFound implementation="com.github.aqn3130.navigatetodeclaration.HandlerTests.testReturnsNullWhenNotFound"/>
     </extensions>
 </idea-plugin>
