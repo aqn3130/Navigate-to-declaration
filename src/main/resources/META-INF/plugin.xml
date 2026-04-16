@@ -15,8 +15,7 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.aqn3130.navigatetodeclaration.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.aqn3130.navigatetodeclaration.startup.MyProjectActivity" />
-        <gotoDeclarationHandler implementation="com.github.aqn3130.navigatetodeclaration.ValKeywordGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.github.aqn3130.navigatetodeclaration.startup.GotoDeclarationHandler"/>
+        <testReturnsNullWhenNotFound implementation="com.github.aqn3130.navigatetodeclaration.HandlerTests.testReturnsNullWhenNotFound"/>
     </extensions>
 </idea-plugin>

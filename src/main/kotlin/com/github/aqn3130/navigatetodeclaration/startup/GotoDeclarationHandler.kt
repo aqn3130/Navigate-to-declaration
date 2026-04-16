@@ -1,4 +1,4 @@
-package com.github.aqn3130.navigatetodeclaration
+package com.github.aqn3130.navigatetodeclaration.startup
 
 import com.intellij.codeInsight.navigation.actions.GotoDeclarationHandler
 import com.intellij.openapi.editor.Editor
@@ -10,7 +10,7 @@ import org.jetbrains.kotlin.idea.KotlinFileType
 import org.jetbrains.kotlin.psi.KtFile
 import org.jetbrains.kotlin.psi.KtProperty
 
-class ValKeywordGotoDeclarationHandler : GotoDeclarationHandler {
+class GotoDeclarationHandler : GotoDeclarationHandler {
 
     override fun getGotoDeclarationTargets(
         sourceElement: PsiElement?,
@@ -58,4 +58,3 @@ class ValKeywordGotoDeclarationHandler : GotoDeclarationHandler {
         element.children.forEach { collectMatchingProperties(it, name, results) }
     }
 }
-
