@@ -1,8 +1,22 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.aqn3130.navigatetodeclaration</id>
-    <name>Go To Declaration</name>
+    <name>GoTo Declaration</name>
     <vendor>Ahmad Qurbanzada</vendor>
+
+    <description><![CDATA[
+        <p>Enhances the <b>Go To Declaration</b> navigation in JetBrains IDEs by extending the default behavior
+        to support additional languages and frameworks, including Kotlin and Handlebars/Mustache templates.</p>
+
+        <p><b>Features:</b></p>
+        <ul>
+            <li>Click any variable in a Handlebars (.hbs) template to navigate to the corresponding Kotlin property declaration</li>
+            <li>Supports Handlebars/Mustache template references (when the Handlebars plugin is installed)</li>
+            <li>Compatible with both K1 and K2 Kotlin compiler modes</li>
+        </ul>
+
+        <p>Simply press <b>Ctrl+B</b> (or <b>Cmd+B</b> on macOS) on a symbol to jump directly to its declaration.</p>
+    ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.kotlin</depends>
